@@ -1,0 +1,188 @@
+body {
+  overflow-x: clip;
+}
+
+.header {
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+@media (max-width: 1200px) {
+  .header {
+    height: 5vh;
+  }
+}
+.header .logo {
+  height: inherit;
+  margin: 0 auto;
+  padding: 1vh 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header .logo img {
+  height: -webkit-fill-available;
+}
+
+.hero {
+  margin-top: 5vh;
+}
+.hero .carousel-indicators {
+  width: 75%;
+}
+.hero .carousel-inner {
+  height: -moz-max-content;
+  height: max-content;
+}
+@media (min-width: 1200px) {
+  .hero .carousel-inner img {
+    height: 95vh;
+  }
+}
+
+.video blockquote {
+  border: none;
+}
+
+.locations {
+  padding: 3vh 15vh;
+  background-color: black;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .locations {
+    padding: 3vh 5vh;
+  }
+}
+.locations .row {
+  height: -webkit-fill-available;
+}
+.locations .row .col-md {
+  text-align: center;
+  padding: 2vh 0;
+}
+.locations .row .col-md h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .locations .row .col-md h2 {
+    font-size: 2rem;
+  }
+}
+.locations .row .col-md p {
+  font-size: 2rem;
+}
+@media (max-width: 1200px) {
+  .locations .row .col-md p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products .card {
+    flex-direction: row;
+  }
+  .products .card img {
+    width: 30%;
+  }
+}
+.products .btn-primary {
+  background-color: red;
+  border-color: red;
+}
+.products .btn-primary:focus {
+  background-color: black !important;
+  border-color: red !important;
+}
+.products .btn-primary::not(:disabled):not(.disabled):active {
+  background-color: black;
+  border-color: red;
+}
+.products .cback {
+  padding: 3vh 5vh;
+  background-color: black;
+}
+.products .cback .card {
+  background-color: black;
+  color: white;
+}
+@media (min-width: 1200px) {
+  .products .cback .card {
+    margin: 4vh;
+  }
+  .products .cback .card .whatsapp {
+    background-color: #25D366;
+    width: -webkit-fill-available;
+    color: white;
+    font-weight: 600;
+    padding: 0.5vh 0;
+    font-size: 1.5rem;
+    bottom: 1rem;
+    position: absolute;
+  }
+  .products .cback .card h4 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .products .cback .card .cl {
+    padding-left: 2vw;
+  }
+}
+.products .row .card {
+  margin: 2vh auto;
+  width: 400px;
+}
+@media (min-width: 1200px) {
+  .products .row .card {
+    margin: 2vh 5vh;
+    width: unset;
+  }
+}
+.products .row .card .whatsapp {
+  background-color: #25D366;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  margin: 0.5vh 0;
+}
+.products .row .card img {
+  width: 100%;
+}
+
+.footer {
+  background-color: black;
+  padding: 3rem;
+}
+.footer .logo {
+  height: 6rem;
+  padding-bottom: 2rem;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer .logo img {
+  height: -webkit-fill-available;
+}
+.footer .icon {
+  font-size: 1.5rem;
+  width: auto;
+  background-color: black;
+  text-align: center;
+}
+.footer .icon a {
+  color: white;
+  margin: 0 1rem;
+}
+
+@media (min-width: 1200px) {
+  .dcl {
+    display: none;
+  }
+}
+
+.bike {
+  padding: 2vh;
+}/*# sourceMappingURL=style.css.map */

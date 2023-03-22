@@ -1,0 +1,211 @@
+body {
+    overflow-x: clip;
+}
+.header {
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    @media (max-width: 1200px) {
+        height: 5vh;
+    }
+
+    .logo {
+        height: inherit;
+        margin: 0 auto;
+        padding: 1vh 0;
+        width: fit-content;
+
+        img {
+            height: -webkit-fill-available;
+        }
+    }
+}
+
+.hero {
+    margin-top: 5vh;
+    .carousel-indicators {
+        width: 75%;
+    }
+    .carousel-inner {
+        height: max-content;
+
+        @media (min-width: 1200px) {
+            img {
+                height: 95vh;
+            }
+        }
+        
+    }
+}
+
+.video {
+    blockquote {
+        border: none;
+    }
+}
+
+.locations {
+    padding: 3vh 15vh;
+    background-color: black;
+    color: white;
+
+    @media (max-width: 1200px) {
+        padding: 3vh 5vh;
+    }
+    .row {
+        height: -webkit-fill-available;
+        .col-md {
+            text-align: center;
+            padding: 2vh 0;
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                @media (max-width: 1200px) {
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                font-size: 2rem;
+                @media (max-width: 1200px) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.products {
+    @media (min-width: 1200px) {
+        .card {
+            flex-direction: row;
+          }
+          .card img {
+            width: 30%;
+          }
+    }
+
+    .btn {
+        &-primary {
+            background-color: red;
+            border-color: red;
+            &:focus {
+                background-color: black !important;
+                border-color: red !important;
+            }
+
+            &::not(:disabled):not(.disabled):active {
+                background-color: black;
+                border-color: red;
+            }
+        }
+    }
+
+    .cback {
+        padding: 3vh 5vh;
+        background-color: black;
+
+        .card {
+            background-color: black;
+            color: white;
+        }
+        @media (min-width: 1200px) {
+            .card {
+                margin: 4vh;
+                
+
+                .whatsapp {
+                    background-color: #25D366;
+                    width: -webkit-fill-available;
+                    color: white;
+                    font-weight: 600;
+                    padding: 0.5vh 0;
+                    font-size: 1.5rem;
+                    bottom: 1rem;
+                    position: absolute;
+                }
+
+                h4 {
+                    font-size: 3rem;
+                    font-weight: 700;
+                }
+
+                .cl {
+                    padding-left: 2vw;
+                }
+            }
+        }
+    }
+    .row {
+        .card {
+            margin: 2vh auto;
+            width: 400px;
+            @media (min-width: 1200px) {
+                margin: 2vh 5vh;
+                width: unset;
+            }
+
+            .whatsapp {
+                background-color: #25D366;
+                width: 100%;
+                color: white;
+                font-weight: 600;
+                margin: 0.5vh 0;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: black;
+    padding: 3rem;
+
+    // .row {
+    //     height: inherit;
+    // }
+
+    .logo 
+    {
+        height: 6rem;
+        padding-bottom: 2rem;
+        margin: auto;
+        width: fit-content;
+
+        img {
+            height: -webkit-fill-available;
+        }
+    }
+
+    .icon {
+        // display: inline-block;
+        font-size: 1.5rem;
+        width: auto;
+        background-color: black;
+        text-align: center;
+        a {
+            color: white;
+            margin: 0 1rem;
+        }
+    }
+
+}
+
+.dcl {
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.bike {
+    padding: 2vh;
+}
+
