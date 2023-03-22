@@ -41,24 +41,58 @@ body {
     height: 95vh;
   }
 }
-.hero .carousel-inner .desc {
-  position: absolute;
+
+.about .desc {
   top: 0;
   /* height: inherit; */
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   justify-content: center;
   display: flex;
-  width: 38vw;
-  right: 10%;
-  padding: 7rem 1rem;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 4rem 2rem;
+  background: rgba(245, 0, 0, 0.5);
 }
 @media (min-width: 1200px) {
-  .hero .carousel-inner .desc {
-    font-size: 3rem;
-    padding: 24rem 3rem;
+  .about .desc {
+    font-size: 2rem;
+    padding: 4rem 30rem;
+  }
+}
+
+.offer {
+  padding: 3vh 15vh;
+  background-color: black;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .offer {
+    padding: 3vh 5vh;
+  }
+}
+.offer .row {
+  height: -webkit-fill-available;
+}
+.offer .row .col-md {
+  text-align: center;
+  padding: 2rem 5rem;
+}
+.offer .row .col-md h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: red;
+}
+@media (max-width: 1200px) {
+  .offer .row .col-md h2 {
+    font-size: 2rem;
+  }
+}
+.offer .row .col-md p {
+  font-size: 2rem;
+}
+@media (max-width: 1200px) {
+  .offer .row .col-md p {
+    font-size: 1.5rem;
   }
 }
 
@@ -84,8 +118,9 @@ body {
   padding: 2vh 0;
 }
 .locations .row .col-md h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
+  color: red;
 }
 @media (max-width: 1200px) {
   .locations .row .col-md h2 {
@@ -101,6 +136,9 @@ body {
   }
 }
 
+.products {
+  background-color: black;
+}
 @media (min-width: 1200px) {
   .products .card {
     flex-direction: row;
@@ -206,4 +244,19 @@ body {
 
 .bike {
   padding: 2vh;
+}
+
+.title {
+  color: red;
+  margin-bottom: 2rem;
+}
+.title h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .title h1 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
